@@ -27,9 +27,9 @@ class QuestionView extends Component {
       success: (result) => {
         this.setState({
           questions: result.questions,
-          totalQuestions: result.total_questions,
+          totalQuestions: result.totalQuestions,
           categories: result.categories,
-          currentCategory: result.current_category,
+          currentCategory: result.currentCategory,
         });
         return;
       },
@@ -70,8 +70,8 @@ class QuestionView extends Component {
       success: (result) => {
         this.setState({
           questions: result.questions,
-          totalQuestions: result.total_questions,
-          currentCategory: result.current_category,
+          totalQuestions: result.totalQuestions,
+          currentCategory: result.currentCategory,
         });
         return;
       },
@@ -84,7 +84,7 @@ class QuestionView extends Component {
 
   submitSearch = (searchTerm) => {
     $.ajax({
-      url: `/questions`, //TODO: update request URL
+      url: `/questions/search`, //TODO: update request URL
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json',
@@ -96,8 +96,8 @@ class QuestionView extends Component {
       success: (result) => {
         this.setState({
           questions: result.questions,
-          totalQuestions: result.total_questions,
-          currentCategory: result.current_category,
+          totalQuestions: result.totalQuestions,
+          currentCategory: result.currentCategory,
         });
         return;
       },

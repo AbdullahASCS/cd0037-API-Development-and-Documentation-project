@@ -13,3 +13,9 @@ ehthumbs.db
 Thumbs.db
 env/
 frontend/node_modules/
+/.idea/.gitignore
+/.idea/cd0037-API-Development-and-Documentation-project.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
